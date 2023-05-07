@@ -1,0 +1,38 @@
+DROP DATABASE IF EXISTS business_db;
+CREATE DATABASE business_db;
+
+USE business_db;
+
+-- ADD AUTO INCREMENT AND KEYS. EXAMPLE AT BOTTOM
+CREATE TABLE department (
+    id INT AUTO_INCREMENT PRIMARY KEY,
+    name VARCHAR(100)
+);
+
+CREATE TABLE role (
+id INT AUTO_INCREMENT PRIMARY KEY,
+title VARCHAR(30),
+salary DECIMAL,
+department_id INT,
+FOREIGN KEY (department_id)
+REFERENCES department (id)
+ON DELETE CASCADE
+);
+
+CREATE TABLE employee (
+id INT AUTO_INCREMENT PRIMARY KEY,
+first_name VARCHAR(50),
+last_name VARCHAR(50),
+role_id INT,
+manager_id INT,
+FOREIGN KEY (role_id)
+REFERENCES role (id)
+ON DELETE CASCADE,
+FOREIGN KEY (manager_id)
+REFERENCES employee (id)
+ON DELETE CASCADE
+);
+
+DESCRIBE department;
+DESCRIBE role;
+DESCRIBE employee;
