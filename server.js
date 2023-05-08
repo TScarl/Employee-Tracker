@@ -81,8 +81,7 @@ const db = mysql.createConnection(
 //     })
 // })
   
-app.listen(PORT, () =>
-    console.log(`App listening at http://localhost:${PORT} 🚀`));
+app.listen(PORT);
 
     module.exports = {
         db
