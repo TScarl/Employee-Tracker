@@ -3,7 +3,7 @@ const mysql = require('mysql2')
 // is path actually needed?
 const path = require('path');
 
-const PORT = 3001;
+const PORT = process.env.PORT || 3001;
 const app = express();
 
 app.use(express.json());
@@ -80,7 +80,7 @@ const db = mysql.createConnection(
 //         return res.json({ movies: results })
 //     })
 // })
-
+  
 app.listen(PORT, () =>
     console.log(`App listening at http://localhost:${PORT} 🚀`));
 
