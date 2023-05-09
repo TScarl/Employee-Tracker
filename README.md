@@ -4,6 +4,7 @@
 
 Employee Tracker is an CLI (command line interface) application which allows business owners to track and manage their employees. Employee Tracker allows you to store the various departments job roles and employees you have within your business and, it allows you to easily add new or edit old departments, roles and employees. Allowing you to keep track of how much your employees are entitled to be paid, under their job description. It shows which manager is in charge of which employee and, which department of the business that they work for.
 
+link to see the application in action: https://drive.google.com/file/d/1lod0IeWK56jvCreDrEGx0jSY0qTeyl9K/view
 ![Screenshot (24)](https://user-images.githubusercontent.com/123338043/236746676-b802076e-12bb-43e6-94f4-febb3d691964.png)
 
 ## License
