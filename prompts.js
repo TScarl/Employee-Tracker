@@ -30,6 +30,11 @@ inquirer.prompt([
             employees.viewAllEmployees(db, () => {
                 startApp();
             });
+            // break;
+            // case 'View Employee by Manager':
+            // employees.viewEmployeesByManager(db, () => {
+            //   startApp();
+            // });
             break;
           case 'Add a Department':
             departments.addDepartment(db, () => {
